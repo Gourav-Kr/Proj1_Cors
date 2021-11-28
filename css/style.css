@@ -204,6 +204,30 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #55c57a, #28b485);
+    -webkit-background-clip: text;
+    background-size: 400%;
+    background-position: left;
+    color: transparent;
+    transition: background-position 1s; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+    .feature-box:hover .feature-box__icon {
+      background-position: right; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
