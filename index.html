@@ -15,6 +15,26 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Natous</a></li>
+                <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Your benfits</a></li>
+                <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Popular tours</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+        </nav>
+    </div>
+    
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -29,8 +49,10 @@
             <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
     </header>
+
     <main>
-        <section class="section-about">
+
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Exciting Tours and Travel
@@ -61,7 +83,8 @@
                 </div>
             </div>
         </section>
-        <section class="section-features">
+
+        <section class="section-features" id="section-features">
                 
             <div class="row">
                 <div class="col-1-of-4">
@@ -105,6 +128,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -216,7 +240,7 @@
             </div>
         </section>
 
-        <section class="section-stories">
+        <section class="section-stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -269,7 +293,8 @@
                 <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
         </section>
-        <section class="section-book">
+
+        <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -316,7 +341,8 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+
+        <footer class="footer" id="footer">
             <div class="footer__logo-box">
                 <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
             </div>
@@ -341,6 +367,7 @@
                 </div>
             </div>
         </footer>
+
     </main>
 </body>
 </html>
