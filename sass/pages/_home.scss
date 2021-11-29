@@ -14,7 +14,8 @@
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
-
+    // background-size:300%;
+    // animation: animate-grad 20s linear infinite alternate;
     & > * {
         transform: skewY(7deg);
     }

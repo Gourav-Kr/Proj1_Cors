@@ -49,7 +49,8 @@ body {
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
-
+    background-size:400%;
+    animation: animate-grad 2s infinite alternate;
     &:hover {
       transform: skewY(2deg) skewX(10deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);

@@ -19,13 +19,14 @@
         background-size:400%;
         background-position:left;
         color: transparent;
-        transition: background-position 1s;
+        // transition: background-position 1s;
+        animation: animate-grad 1s linear infinite alternate;
     }
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
-        & .feature-box__icon{
-            background-position:right;
-        }
+        // & .feature-box__icon{
+        //     background-position:right;
+        // }
     }
 }
