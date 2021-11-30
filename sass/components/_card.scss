@@ -13,6 +13,8 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
@@ -158,8 +160,10 @@
         font-weight: 100;
     }
 
-    @include resp(tab-p) {
-        
+    // @include resp(tab-p) {
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover:none) {
+                
         height: auto;
         border-radius: 3px;
         background-color: $color-white;

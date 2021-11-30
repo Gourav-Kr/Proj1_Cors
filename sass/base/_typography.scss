@@ -10,6 +10,8 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
@@ -27,7 +29,7 @@ body {
             font-size: 5rem;
         }
 
-        @media(max-width:370px)  {
+        @media only screen and (max-width:370px)  {
             font-size: 4rem;
         }        
         
@@ -43,7 +45,7 @@ body {
         @include resp(phone) {
             letter-spacing: 0.5rem;
         }
-        @media(max-width:370px)  {
+        @media only screen and (max-width:370px)  {
             font-size: 1.6rem;
         }
     }
