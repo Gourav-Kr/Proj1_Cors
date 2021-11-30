@@ -9,9 +9,35 @@
 
 html {
     font-size: 62.5%;
+
+    @include resp(tab-l) { // width < 1200
+        font-size: 56.25%; 
+    }
+
+    @include resp(tab-p) { // width < 900
+        font-size: 50%; 
+    }
+    
+    @include resp(desk) {
+        font-size: 75%; 
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+    
+    @include resp(tab-l) {
+        padding: 1.5rem;
+    }
+
+    @include resp(tab-p) {
+        padding: 0;
+    }
+    
 }
 
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

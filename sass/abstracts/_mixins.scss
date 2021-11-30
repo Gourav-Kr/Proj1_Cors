@@ -12,3 +12,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// media query 
+// order: Base + typography > general layout + grid > page layout > components
+
+@mixin resp($bp) {
+    @if $bp==phone {
+        @media (max-width: 37.5em){@content};  //600px
+    }
+    @if $bp==tab-p {
+        @media (max-width: 56.25em){@content}; //900px
+    }
+    @if $bp==tab-l {
+        @media (max-width: 75em){@content};    //1200px
+    }
+    @if $bp==desk {
+        @media (min-width: 112.5em){@content}; //1800px
+    }
+}

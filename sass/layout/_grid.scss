@@ -4,15 +4,33 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include resp(tab-p) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
     
-    @include clearfix;
+    @include resp(tab-p) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
 
+    @include clearfix;
+    
     [class^="col-"] {
         float: left;
-
+        
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            
+            @include resp(tab-p) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include resp(tab-p) {
+            width: 100% !important;
         }
     }
 
